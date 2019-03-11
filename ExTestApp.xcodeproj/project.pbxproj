@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1CA68822362DF900AAA54E /* Training.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CA68622362DF900AAA54E /* Training.cpp */; };
 		8A39E57C22332DC50043268F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39E57B22332DC50043268F /* AppDelegate.m */; };
 		8A39E57F22332DC50043268F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39E57E22332DC50043268F /* ViewController.m */; };
 		8A39E58222332DC50043268F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A39E58022332DC50043268F /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A1CA68622362DF900AAA54E /* Training.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Training.cpp; sourceTree = "<group>"; };
+		8A1CA68722362DF900AAA54E /* Training.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Training.hpp; sourceTree = "<group>"; };
 		8A39E57722332DC50043268F /* ExTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A39E57A22332DC50043268F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8A39E57B22332DC50043268F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,10 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A1CA68522362DD700AAA54E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8A1CA68722362DF900AAA54E /* Training.hpp */,
+				8A1CA68622362DF900AAA54E /* Training.cpp */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		8A39E56E22332DC50043268F = {
 			isa = PBXGroup;
 			children = (
-				8A39E59022332E230043268F /* Shared */,
+				8A1CA68522362DD700AAA54E /* Shared */,
 				8A39E57922332DC50043268F /* ExTestApp */,
 				8A39E57822332DC50043268F /* Products */,
 			);
@@ -70,13 +82,6 @@
 				8A39E58922332DC60043268F /* main.m */,
 			);
 			path = ExTestApp;
-			sourceTree = "<group>";
-		};
-		8A39E59022332E230043268F /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A39E57F22332DC50043268F /* ViewController.m in Sources */,
+				8A1CA68822362DF900AAA54E /* Training.cpp in Sources */,
 				8A39E58A22332DC60043268F /* main.m in Sources */,
 				8A39E57C22332DC50043268F /* AppDelegate.m in Sources */,
 			);
