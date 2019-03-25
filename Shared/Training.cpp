@@ -8,6 +8,12 @@
 
 #include "Training.hpp"
 #include <vector>
+#include <queue>
+#include <deque>
+#include <map>
+#include <unordered_map>
+#include <set>
+#include <string>
 #include <algorithm>
 
 using namespace std;
@@ -223,12 +229,12 @@ struct Interval {
  Output: [[1,2],[3,10],[12,16]]
  Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
  */
-//class Solution {
-//public:
-//    vector<Interval> insert(vector<Interval>& intervals, Interval newInterval) {
-//
-//    }
-//};
+class Solution {
+public:
+    vector<Interval> insert(vector<Interval>& intervals, Interval newInterval) {
+        
+    }
+};
 
 
 // 244. Shortest Word Distance II
@@ -245,13 +251,29 @@ struct Interval {
  Note:
  You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
  */
+/*
+ word1 : [i1, i2, i3], ascending max - max min - min min - max min - max
+ word2 : [i5, i6], ascending
+ =>
+ what is the shortest distance between the two arrays
+ edge case: same word?
+ */
 //class WordDistance {
+//    unordered_map<string, vector<int>> mp;
 //public:
 //    WordDistance(vector<string> words) {
-//        
+//        for (int i = 0; i < words.size(); ++i) {
+//            mp[words[i]].push_back(i);
+//        }
 //    }
-//    
+//
 //    int shortest(string word1, string word2) {
-//        
+//        vector<int> &dists1 = mp[word1];
+//        vector<int> &dists2 = mp[word2];
+//        int d1 = abs(dists1.front() - dists2.front());
+//        int d2 = abs(dists1.back() - dists2.back());
+//        int d3 = abs(dists1.front() - dists2.back());
+//        int d4 = abs(dists1.back() - dists2.front());
+//        return max(d1, max(d2, max(d3, d4)));
 //    }
 //};
